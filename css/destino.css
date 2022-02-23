@@ -769,158 +769,71 @@ header {
       .tinyCarrousel img:hover {
         filter: blur(4px); } }
 
+.usSection {
+  grid-area: usSection;
+  justify-self: center;
+  display: grid;
+  grid-template-areas: "firstSection" "secondSection" "thirdSection"; }
+
+.firstSection {
+  grid-area: firstSection; }
+  .firstSection h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 42px;
+    margin: 30px 0px 30px 0px; }
+  .firstSection p {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    margin: 30px 0px 30px 0px; }
+  .firstSection img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; }
+
+.secondSection {
+  grid-area: secondSection; }
+  .secondSection h2 {
+    display: block;
+    font-size: 56px;
+    font-family: "Staatliches", cursive;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .secondSection p {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    margin: 30px 0px 30px 0px; }
+
+.thirdSection {
+  grid-area: thirdSection; }
+  .thirdSection h2 {
+    display: block;
+    font-size: 56px;
+    font-family: "Staatliches", cursive;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .thirdSection button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
 @media (max-width: 480px) {
   .usSection {
-    grid-area: usSection;
-    justify-self: center;
-    display: grid;
-    grid-template-areas: "firstSection" "secondSection" "thirdSection";
     min-width: 45%;
-    max-width: 95%; }
-  .firstSection {
-    grid-area: firstSection; }
-    .firstSection h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      margin: 30px 0px 30px 0px; }
-    .firstSection p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 30px 0px 30px 0px; }
-    .firstSection img {
-      display: block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px; }
-  .secondSection {
-    grid-area: secondSection; }
-    .secondSection h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .secondSection p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 30px 0px 30px 0px; }
-  .thirdSection {
-    grid-area: thirdSection; }
-    .thirdSection h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .thirdSection button {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; } }
+    max-width: 95%; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .usSection {
-    grid-area: usSection;
-    justify-self: center;
-    display: grid;
-    grid-template-areas: "firstSection" "secondSection" "thirdSection";
     min-width: 45%;
-    max-width: 95%; }
-  .firstSection {
-    grid-area: firstSection; }
-    .firstSection h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      margin: 30px 0px 30px 0px; }
-    .firstSection p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 30px 0px 30px 0px; }
-    .firstSection img {
-      display: block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px; }
-  .secondSection {
-    grid-area: secondSection; }
-    .secondSection h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .secondSection p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 30px 0px 30px 0px; }
-  .thirdSection {
-    grid-area: thirdSection; }
-    .thirdSection h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .thirdSection button {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; } }
+    max-width: 95%; } }
 
 @media (min-width: 1024px) {
   .usSection {
-    grid-area: usSection;
-    justify-self: center;
-    display: grid;
-    grid-template-areas: "firstSection" "secondSection" "thirdSection";
     width: 45%;
-    min-width: 700px; }
-  .firstSection {
-    grid-area: firstSection; }
-    .firstSection h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      margin: 30px 0px 30px 0px; }
-    .firstSection p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 30px 0px 30px 0px; }
-    .firstSection img {
-      display: block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px; }
-  .secondSection {
-    grid-area: secondSection; }
-    .secondSection h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .secondSection p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 30px 0px 30px 0px; }
-  .thirdSection {
-    grid-area: thirdSection; }
-    .thirdSection h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .thirdSection button {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; } }
+    min-width: 700px; } }
 
 .mainContacto {
   grid-area: mainForm;
