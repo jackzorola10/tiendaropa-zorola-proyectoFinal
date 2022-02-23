@@ -479,60 +479,37 @@ header {
     max-width: 600px;
     width: 100%; } }
 
+.total {
+  grid-area: total;
+  background-color: #E0FBFC;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #293241;
+  border-radius: 10px; }
+  .total h3 {
+    color: #293241;
+    font-family: "Oswald", sans-serif;
+    font-size: 32px; }
+
+.totalAmount {
+  color: #293241;
+  font-family: "Oswald", sans-serif;
+  font-size: 72px; }
+
 @media (max-width: 480px) {
   .total {
-    grid-area: total;
-    background-color: #E0FBFC;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #293241;
-    border-radius: 10px;
     width: 80%;
     margin-right: auto;
-    margin-left: auto; }
-    .total h3 {
-      color: #293241;
-      font-family: 'Oswald', sans-serif;
-      font-size: 32px; }
-  .totalAmount {
-    color: #293241;
-    font-family: 'Oswald', sans-serif;
-    font-size: 72px; } }
+    margin-left: auto; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .total {
-    grid-area: total;
-    background-color: #E0FBFC;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #293241;
-    border-radius: 10px;
     width: 80%;
     margin-right: auto;
-    margin-left: auto; }
-    .total h3 {
-      color: #293241;
-      font-family: 'Oswald', sans-serif;
-      font-size: 32px; }
-  .totalAmount {
-    color: #293241;
-    font-family: 'Oswald', sans-serif;
-    font-size: 72px; } }
+    margin-left: auto; } }
 
 @media (min-width: 1024px) {
   .total {
-    grid-area: total;
-    background-color: #E0FBFC;
-    padding: 20px;
-    box-shadow: 5px 5px 5px #293241;
-    border-radius: 10px;
-    max-width: 400px; }
-    .total h3 {
-      color: #293241;
-      font-family: 'Oswald', sans-serif;
-      font-size: 32px; }
-  .totalAmount {
-    color: #293241;
-    font-family: 'Oswald', sans-serif;
-    font-size: 72px; } }
+    max-width: 400px; } }
 
 .bodyCamisetas main {
   grid-area: cShirts; }
