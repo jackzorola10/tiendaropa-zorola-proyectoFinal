@@ -272,15 +272,6 @@ header {
   /*GRID INDEX*/
   padding: 30px; }
 
-.bannerImg {
-  grid-area: banner;
-  width: 100%;
-  border-radius: 10px;
-  background-image: url(../assets/background-100.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  animation: nextBanner 30s ease-in-out -10s infinite normal; }
-
 .titles {
   display: block;
   grid-area: titles;
@@ -294,18 +285,31 @@ header {
     font-size: 24px;
     margin: 20px 0px 20px 0px; }
 
-@keyframes nextBanner {
+.banner {
+  background-color: black;
+  border-radius: 1rem; }
+
+#bImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url(../assets/banners/banner1.jpg);
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 12s;
+  animation-iteration-count: infinite; }
+
+@keyframes slider {
   0% {
     background-image: url(../assets/banners/banner1.jpg); }
-  20% {
+  30% {
     background-image: url(../assets/banners/banner2.jpg); }
-  40% {
-    background-image: url(../assets/banners/banner3.jpg); }
   60% {
-    background-image: url(../assets/banners/banner4.jpg); }
-  80% {
-    background-image: url(../assets/banners/banner1.jpg); } }
+    background-image: url(../assets/banners/banner3.jpg); }
+  100% {
+    background-image: url(../assets/banners/banner4.jpg); } }
 
+/*These evariables help the banner remain proportional in every screen*/
 /*  ###################################
     ###### MEDIA QUERY SENSITIVE ######
     ################################### */
@@ -313,19 +317,23 @@ header {
   .hero1 {
     display: subgrid;
     grid-template-areas: "banner" "titles";
-    grid-template-columns: 100%; }
-  .bannerImg {
-    /*#### BANNER TRANSITION SMARTPHONE####*/
-    height: 30vh; } }
+    grid-template-columns: 1fr;
+    justify-content: center; }
+  .banner {
+    width: 85vw;
+    min-height: 25vh;
+    height: 42.5vw; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .hero1 {
     display: subgrid;
     grid-template-areas: "banner" "titles";
-    grid-template-columns: 100%; }
-  .bannerImg {
-    /*#### BANNER TRANSITION TABLET####*/
-    height: 25vh; } }
+    grid-template-columns: 1fr;
+    justify-content: center; }
+  .banner {
+    width: 85vw;
+    min-height: 25vh;
+    height: 42.5vw; } }
 
 @media (min-width: 1024px) {
   .hero1 {
@@ -333,9 +341,10 @@ header {
     grid-template-areas: "banner titles";
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px; }
-  .bannerImg {
-    /*#### BANNER TRANSITION DESKTOP####*/
-    height: 45vh; } }
+  .banner {
+    width: 45vw;
+    min-height: 25vh;
+    height: 22.5vw; } }
 
 .productSection {
   grid-area: productSection;
