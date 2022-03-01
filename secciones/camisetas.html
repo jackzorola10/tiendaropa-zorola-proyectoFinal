@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a24f710803.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/destino.css"> 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
     <title>Camisetas | KvM Store</title>
 </head>
 <body class="bodyCamisetas ">
@@ -45,16 +46,109 @@
         <section class="heroCamisetas">
             <h1>What's Good? What's New?</h1>
             
-            <section class="imageCarrousel">
-                <img id="imageCarrouselDestacado" src="../assets/tshirts/tshirtShowCase.png" alt="">
             
-                <section class="tinyCarrousel">
-                    <img src="../assets/tshirts/tshirt12.jpg" alt="">
-                    <img src="../assets/tshirts/tshirt13.jpg" alt="">
-                    <img src="../assets/tshirts/tshirt14.jpg" alt="">
-                    <img src="../assets/tshirts/tshirt15.jpg" alt="">        
-                </section>
-            </section>
+
+<div class="introcontainer">
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+
+      <div class="swiper-slide">
+        <div class="cards">
+            <div class="card ong">
+                <img src="../assets/tshirts/tshirtShowcase11.png"/>
+                <div class="text"></div>
+                <div class="title-box">
+                    <h1>JUJUTSU KAISEN.</h1>
+                    <p>La ultima temporada de Jujutsu Kaisen nos trajo nuevos looks!</p>
+                    <div class="seperator"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="cards">
+            <div class="card two">
+                <img src="../assets/tshirts/tshirtShowcase12.png" alt="" />
+                <div class="text"></div>
+                <div class="title-box">
+                        <h1>LA RABIA DEL TITAN.</h1>
+                        <p>Camisetas de todos los tamaños! Ya seas del escuadron de reconocimiento o talla Titan!.</p>
+                        <div class="seperator"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="cards">
+            <div class="card three">
+                <img src="../assets/tshirts/tshirtShowcase13.png" alt="" />
+                <div class="text"></div>
+                <div class="title-box">
+                    <h1>EVAZILLA!?.</h1>
+                    <p>Nuevas camisetas tras el anuncio de Evangelion en un Ova que incluira a Godzilla en el universo.</p>
+                    <div class="seperator"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="cards">
+            <div class="card four">
+                <img src="../assets/tshirts/tshirtShowcase14.png" alt="" />
+                <div class="text"></div>
+                <div class="title-box">
+                    <h1>HECHICEROS.</h1>
+                    <p>Poder y discordia, algodon y lino! En blanco y negro, todo unisex!.</p>
+                    <div class="seperator"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+     <div class="swiper-arrows">
+        <div class="swiper-button-prev"><span></span></div>
+        <div class="swiper-button-next"><span></span></div>
+    </div>
+
+    <!-- If we need scrollbar -->
+  </div>
+</div>
+
+            <script>
+                const swiper = new Swiper('.swiper-container', {
+                    speed: 500,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    centeredSlides: true,
+                    paginationClickable: true,
+                    watchSlidesProgress: true,
+                    loop: true,
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    });
+            </script>
+
         </section>
 
         <!-- CATEGORIES -->

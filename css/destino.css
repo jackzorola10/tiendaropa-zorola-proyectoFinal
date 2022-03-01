@@ -169,7 +169,7 @@ header {
       display: block;
       background-color: #293241;
       border-bottom: 3px solid #90F1F4;
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       font-size: 28px;
       box-shadow: 0px 10px 10px #293241; }
       .menu a:last-child {
@@ -181,7 +181,8 @@ header {
     #toggle:checked + .menu {
       display: block; }
   #burgerM {
-    color: #E0FBFC; }
+    color: #E0FBFC;
+    font-family: "Oswald", sans-serif; }
     #burgerM:hover {
       color: #293241; }
     #burgerM i {
@@ -219,7 +220,7 @@ header {
       display: block;
       background-color: #293241;
       border-bottom: 3px solid #90F1F4;
-      font-family: 'Oswald', sans-serif;
+      font-family: "Oswald", sans-serif;
       font-size: 28px;
       box-shadow: 0px 10px 10px #293241; }
       .menu a:last-child {
@@ -231,7 +232,8 @@ header {
     #toggle:checked + .menu {
       display: block; }
   #burgerM {
-    color: #E0FBFC; }
+    color: #E0FBFC;
+    font-family: "Oswald", sans-serif; }
     #burgerM:hover {
       color: #293241; }
     #burgerM i {
@@ -256,17 +258,17 @@ header {
     justify-content: end; }
   ul {
     padding: 10px;
-    font-family: 'Staatliches', cursive;
-    color: #e0fbfc;
+    font-family: "Staatliches", cursive;
+    color: #E0FBFC;
     border-radius: 8px;
     width: auto;
     margin: auto 5px auto 5px; }
     ul:hover {
-      background-color: #e03d15; }
+      background-color: #EE6C4D; }
   i {
     padding-left: 5px; }
   a {
-    color: #e0fbfc; } }
+    color: #E0FBFC; } }
 
 .hero1 {
   grid-area: hero;
@@ -347,6 +349,247 @@ header {
     width: 45vw;
     min-height: 25vh;
     height: 22.5vw; } }
+
+@font-face {
+  font-family: "HelveticaNow";
+  src: url(https://assets.codepen.io/5286152/HelveticaNowText-Regular.ttf); }
+
+.introcontainer {
+  width: 100%;
+  height: 100%;
+  margin: auto; }
+
+.swiper-container {
+  width: 100%;
+  height: 70vh;
+  /*We need to edit this for the row size */
+  background-image: url(../assets/background-black-100.jpg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
+.swiper-slide {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center; }
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center; }
+
+.card img {
+  object-fit: cover;
+  width: 600px;
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  min-height: 50vh;
+  padding: 0;
+  margin: 0; }
+
+.card.two img {
+  filter: sepia(100%) hue-rotate(190deg) saturate(300%); }
+
+.card.three img {
+  height: 50vh; }
+
+.card.four img {
+  filter: invert(4%) sepia(75%) saturate(500%) hue-rotate(356deg) brightness(70%) contrast(103%); }
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  max-width: 100%;
+  width: 500px; }
+
+.title-box {
+  display: flex;
+  text-align: left;
+  max-width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 200px;
+  left: 10%;
+  right: 0 !important;
+  bottom: 0;
+  justify-content: center;
+  color: #E0FBFC;
+  opacity: 0;
+  z-index: 15; }
+
+.title-box h1 {
+  display: block;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 100%;
+  font-size: 3vmin; }
+
+.title-box p {
+  font-family: "Anton", sans-serif;
+  font-size: 3vmin;
+  padding-top: 0;
+  margin: 0;
+  padding-left: 1%;
+  max-width: 100%; }
+
+.card .title-box .seperator {
+  height: 1px;
+  width: 10%;
+  background: #E0FBFC;
+  position: absolute;
+  content: "";
+  left: -15%;
+  top: 50%; }
+
+.swiper-slide .title-box {
+  transform: translateX(-50%);
+  transition: all .7s ease .3s; }
+
+.swiper-slide-active .title-box {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all .7s ease; }
+
+.swiper-scrollbar {
+  background: #E0FBFC; }
+
+.swiper-slide .card img {
+  transition: filter .7s ease;
+  filter: grayscale(100%); }
+
+.swiper-slide-active .card img {
+  filter: grayscale(0%) brightness(60%); }
+
+.swiper-pagination-bullet-active {
+  background: #E0FBFC !important;
+  width: 25px !important;
+  height: 5px !important;
+  border-radius: 0 !important; }
+
+.swiper-pagination-bullet {
+  background: #90F1F4 !important;
+  width: 25px !important;
+  height: 5px !important;
+  border-radius: 0 !important; }
+
+.swiper-arrows {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50%; }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 80px !important;
+  height: 80px;
+  background-image: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease; }
+
+.swiper-button-prev {
+  left: 0px !important;
+  right: auto !important;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.swiper-button-next {
+  right: 0px !important;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.swiper-button-prev span,
+.swiper-button-next span {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  border: solid 2px #56698A;
+  border-left: 0;
+  border-bottom: 0;
+  transition: all 0.1s ease; }
+
+.swiper-button-prev span {
+  transform: rotate(-135deg);
+  left: 49%; }
+
+.swiper-button-next span {
+  transform: rotate(45deg);
+  right: 49%; }
+
+.swiper-button-prev:hover span,
+.swiper-button-next:hover span {
+  width: 5px;
+  height: 5px; }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  width: 0px;
+  height: inherit;
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  background-color: #E0FBFC;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  opacity: 0.8; }
+
+.swiper-button-prev:after {
+  right: 0; }
+
+.swiper-button-next:after {
+  left: 0; }
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  width: inherit; }
+
+.swiper-button-disabled {
+  opacity: 1 !important; }
+
+.swiper-button-disabled.swiper-button-prev span,
+.swiper-button-disabled.swiper-button-next span {
+  opacity: 0.2; }
+
+@media screen and (max-width: 512px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    bottom: 0; }
+  .swiper-arrows {
+    height: 60px; }
+  .swiper-button-prev {
+    right: 60px; }
+  .swiper-button-prev span {
+    left: 45%; }
+  .swiper-button-next span {
+    right: 45%; } }
+
+.swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after {
+  content: "attr" !important; }
+
+.swiper-button-prev::after, .swiper-container-rtl .swiper-button-prev::after {
+  content: "attr" !important; }
 
 .productSection {
   grid-area: productSection;
@@ -536,20 +779,13 @@ header {
   text-align: center; }
   .heroCamisetas h1 {
     font-family: "Anton", sans-serif;
-    font-size: 42px; }
-
-#imageCarrouselDestacado {
-  grid-area: destacado;
-  max-width: 600px;
-  width: 100%;
-  border-radius: 10px;
-  align-self: center; }
-  #imageCarrouselDestacado:hover {
-    filter: blur(4px); }
+    font-size: 42px;
+    margin: 2rem 0rem 2rem 0rem; }
 
 .shirtRow {
   display: flex;
   width: 80%;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
