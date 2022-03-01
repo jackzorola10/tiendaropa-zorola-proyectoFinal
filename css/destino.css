@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 .btnPrimary {
   background-color: #EE6C4D;
   font-size: 32px;
@@ -287,7 +288,8 @@ header {
 
 .banner {
   background-color: black;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 
 #bImg {
   width: 100%;
@@ -358,13 +360,16 @@ header {
   display: block;
   font-size: 32px;
   font-family: "Staatliches", cursive;
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin-bottom: 1rem; }
 
 .productRow {
   display: flex;
   margin-bottom: 20px;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  padding: 1rem; }
 
 .product {
   display: inline-block;
@@ -372,10 +377,13 @@ header {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-align: center;
-  margin: 0px 5px 20px 5px; }
+  margin: 0px 5px 20px 5px;
+  background-color: #E0FBFC;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: .5rem; }
   .product img {
     width: 150px;
-    border-radius: 8px;
+    border-radius: .5rem .5rem 0rem 0rem;
     display: block; }
     .product img:hover {
       filter: blur(4px); }
@@ -388,7 +396,8 @@ header {
 .productName {
   display: inline;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  font-weight: 400; }
 
 .bodyCarrito main {
   grid-area: cHandler; }
@@ -758,7 +767,8 @@ header {
     font-size: 42px;
     text-transform: uppercase;
     margin-top: 30px;
-    float: right; }
+    float: right;
+    padding-left: 2rem; }
   .heroContacto img {
     display: inline-block;
     max-height: 200px;
@@ -773,11 +783,16 @@ fieldset {
   grid-template-rows: 100px 100px 100px 100px;
   grid-template-columns: 100%;
   grid-row-gap: 20px;
-  border-width: 0; }
+  border-width: 0;
+  background-color: #E0FBFC;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  justify-content: center; }
 
-label {
+form label {
   font-family: "Staatliches", cursive;
-  color: #3D5A80; }
+  color: #293241; }
 
 .shortInput {
   display: inline-block;
@@ -814,9 +829,10 @@ input[type='text']::placeholder {
   text-align: left; }
 
 .messageType {
-  grid-area: mType h3;
-    grid-area-font-family: "Staatliches", cursive;
-    grid-area-color: #3D5A80; }
+  grid-area: mType;
+  font-family: "Staatliches", cursive;
+  color: #3D5A80;
+  margin: 1rem 0rem 1rem 0rem; }
 
 select {
   width: 350px;
