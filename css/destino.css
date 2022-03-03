@@ -630,11 +630,6 @@ header {
     display: block; }
     .product img:hover {
       filter: blur(4px); }
-  .product i {
-    display: inline;
-    color: #293241; }
-    .product i:hover {
-      color: #56698A; }
 
 .productName {
   display: inline;
@@ -790,7 +785,7 @@ header {
   margin-right: auto;
   flex-direction: column;
   align-items: center; }
-  .shirtRow button {
+  .shirtRow .btnSecondary {
     margin-bottom: 40px; }
 
 .discountsTitles {
