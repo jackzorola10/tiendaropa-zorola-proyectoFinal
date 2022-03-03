@@ -36,6 +36,18 @@
   margin: 5px;
   font-family: 'Staatliches', cursive; }
 
+.addBtn {
+  background-color: #3D5A80;
+  font-size: 1rem;
+  color: #E0FBFC;
+  border-radius: 0 0 0.4rem 0.4rem;
+  border-width: 0;
+  border-color: none;
+  width: 100%;
+  height: 2rem; }
+  .addBtn:hover {
+    background-color: #293241; }
+
 * {
   padding: 0;
   margin: 0;
@@ -629,7 +641,9 @@ header {
     border-radius: .5rem .5rem 0rem 0rem;
     display: block; }
     .product img:hover {
-      filter: blur(4px); }
+      width: 300px;
+      position: absolute;
+      border-radius: .5rem; }
 
 .productName {
   display: inline;
